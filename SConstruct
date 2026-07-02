@@ -123,7 +123,7 @@ if (env["lua_runtime"] == "lua"):
     lua_sources.extend(Glob("lua-5.1.5/src/*.h"))
     # Exclude onelua.c to avoid duplicate symbols with individual .c files
     all_lua_c = Glob("lua-5.1.5/src/*.c")
-    exclude_files = ["onelua.c", "lua.c"]
+    exclude_files = ["onelua.c", "lua.c", "loadlib_rel.c"]
     lua_c_files = [f for f in all_lua_c if not any(ef in str(f) for ef in exclude_files)]
     lua_sources.extend(lua_c_files)
 
