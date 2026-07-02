@@ -19,8 +19,6 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	GDREGISTER_CLASS(Runtime);
 	GDREGISTER_CLASS(ScriptObject);
 	GDREGISTER_CLASS(ScriptFunction);
-	GDREGISTER_CLASS(DisposableObject);
-	GDREGISTER_CLASS(RefObject);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {

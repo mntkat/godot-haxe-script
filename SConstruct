@@ -118,11 +118,11 @@ luajit_lib = None
 if (env["lua_runtime"] == "lua"):
     lua_sources = []
 
-    env.Append(CPPPATH=["lua-5.1.5/"])
+    env.Append(CPPPATH=["lua-5.1.5/src/"])
     # Add only .c and .cpp source files, not headers
-    lua_sources.extend(Glob("lua-5.1.5/*.cpp"))
+    lua_sources.extend(Glob("lua-5.1.5/src/*.h"))
     # Exclude onelua.c to avoid duplicate symbols with individual .c files
-    all_lua_c = Glob("lua-5.1.5/*.c")
+    all_lua_c = Glob("lua-5.1.5/src/*.c")
     exclude_files = ["onelua.c", "lua.c"]
     lua_c_files = [f for f in all_lua_c if not any(ef in str(f) for ef in exclude_files)]
     lua_sources.extend(lua_c_files)

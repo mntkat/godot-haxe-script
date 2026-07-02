@@ -24,7 +24,7 @@ void Runtime::luaopen_Plane() {
 			}
 		),
 		"distanceTo", &Plane::distance_to,
-		"getCenter", &Plane::get_center,
+		//"getCenter", &Plane::get_center,
 		"hasPoint", sol::overload(
 			&Plane::has_point,
 			[](const Plane& plane, const Vector3 point) {

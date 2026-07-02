@@ -1,0 +1,61 @@
+[configuration]
+
+entry_symbol = "haxescript_init"
+compatibility_minimum = "4.5"
+
+[libraries]
+; Relative paths ensure that our GDExtension can be placed anywhere in the project directory.
+macos.single.debug = "./macos/libhaxescript.macos.template_debug.dylib"
+macos.double.debug = "./macos/libhaxescript.macos.template_debug.double.dylib"
+macos.single.release = "./macos/libhaxescript.macos.template_release.dylib"
+macos.double.release = "./macos/libhaxescript.macos.template_debug.double.dylib"
+
+ios.arm64.single.debug = "./ios/libhaxescript.ios.template_debug.dylib"
+ios.arm64.double.debug = "./ios/libhaxescript.ios.template_debug.double.dylib"
+ios.arm64.single.release = "./ios/libhaxescript.ios.template_release.dylib"
+ios.arm64.double.release = "./ios/libhaxescript.ios.template_release.double.dylib"
+
+windows.x86_32.single.debug = "./windows/haxescript.windows.template_debug.x86_32.dll"
+windows.x86_32.double.debug = "./windows/haxescript.windows.template_debug.x86_32.double.dll"
+windows.x86_32.single.release = "./windows/haxescript.windows.template_release.x86_32.dll"
+windows.x86_32.double.release = "./windows/haxescript.windows.template_release.x86_32.double.dll"
+
+windows.x86_64.single.debug = "./windows/haxescript.windows.template_debug.x86_64.dll"
+windows.x86_64.double.debug = "./windows/haxescript.windows.template_debug.x86_64.double.dll"
+windows.x86_64.single.release = "./windows/haxescript.windows.template_release.x86_64.dll"
+windows.x86_64.double.release = "./windows/haxescript.windows.template_release.x86_64.double.dll"
+
+windows.arm64.single.debug = "./windows/haxescript.windows.template_debug.arm64.dll"
+windows.arm64.double.debug = "./windows/haxescript.windows.template_debug.arm64.double.dll"
+windows.arm64.single.release = "./windows/haxescript.windows.template_release.arm64.dll"
+windows.arm64.double.release = "./windows/haxescript.windows.template_release.arm64.double.dll"
+
+linux.x86_64.single.debug = "./linux/libhaxescript.linux.template_debug.x86_64.so"
+linux.x86_64.double.debug = "./linux/libhaxescript.linux.template_debug.x86_64.double.so"
+linux.x86_64.single.release = "./linux/libhaxescript.linux.template_release.x86_64.so"
+linux.x86_64.double.release = "./linux/libhaxescript.linux.template_release.x86_64.double.so"
+
+linux.arm64.single.debug = "./linux/libhaxescript.linux.template_debug.arm64.so"
+linux.arm64.double.debug = "./linux/libhaxescript.linux.template_debug.arm64.double.so"
+linux.arm64.single.release = "./linux/libhaxescript.linux.template_release.arm64.so"
+linux.arm64.double.release = "./linux/libhaxescript.linux.template_release.arm64.double.so"
+
+linux.rv64.single.debug = "./linux/libhaxescript.linux.template_debug.rv64.so"
+linux.rv64.double.debug = "./linux/libhaxescript.linux.template_debug.rv64.double.so"
+linux.rv64.single.release = "./linux/libhaxescript.linux.template_release.rv64.so"
+linux.rv64.double.release = "./linux/libhaxescript.linux.template_release.rv64.double.so"
+
+android.x86_64.single.debug = "./android/libhaxescript.android.template_debug.x86_64.so"
+android.x86_64.double.debug = "./android/libhaxescript.android.template_debug.x86_64.double.so"
+android.x86_64.single.release = "./android/libhaxescript.android.template_release.x86_64.so"
+android.x86_64.double.release = "./android/libhaxescript.android.template_release.x86_64.double.so"
+
+android.arm64.single.debug = "./android/libhaxescript.android.template_debug.arm64.so"
+android.arm64.double.debug = "./android/libhaxescript.android.template_debug.arm64.double.so"
+android.arm64.single.release = "./android/libhaxescript.android.template_release.arm64.so"
+android.arm64.double.release = "./android/libhaxescript.android.template_release.arm64.double.so"
+
+web.wasm32.single.debug = "./web/libhaxescript.web.template_debug.wasm32.nothreads.wasm"
+web.wasm32.double.debug = "./web/libhaxescript.web.template_release.wasm32.double.nothreads.wasm"
+web.wasm32.single.release = "./web/libhaxescript.web.template_release.wasm32.nothreads.wasm"
+web.wasm32.double.release = "./web/libhaxescript.web.template_release.wasm32.double.nothreads.wasm"
